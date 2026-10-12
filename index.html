@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collectif 1440 | Collection 1</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <img class="photo-haut" src="images/lebron.png" alt="Lebron">
+
+    <div class="rangee-du-haut">
+        <!-- Les boîtes cliquables sont créées automatiquement par script.js -->
+        <div class="grille-polices" id="grille-polices"></div>
+
+        <div class="jauges">
+            <div class="jauge">
+                <label for="jauge-taille">Taille de police</label>
+                <input type="range" id="jauge-taille" min="24" max="140" value="60" step="1" data-valeur-base="60">
+            </div>
+            <div class="jauge">
+                <label for="jauge-espacement">Espacement des lettres</label>
+                <input type="range" id="jauge-espacement" min="-5" max="30" value="0" step="1" data-valeur-base="0">
+            </div>
+            <div class="jauge">
+                <label for="jauge-hauteur">Hauteur de ligne</label>
+                <input type="range" id="jauge-hauteur" min="80" max="250" value="130" step="5" data-valeur-base="130">
+            </div>
+        </div>
+    </div>
+
+    <div class="espace-reserve"></div>
+
+    <div class="zone-texte-wrapper">
+        <div id="zone-texte" contenteditable="true">Collection un</div>
+        <div id="placeholder-texte">Écris quelque chose ici...</div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
